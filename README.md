@@ -22,6 +22,7 @@ Conteúdo baseado nos Roteiros de Atividades dos Módulos 21 a 28 (2026) — col
 - Estrelas ⭐, níveis (Aprendiz → Lenda), medalhas por ponto concluído e confete 🎉.
 - Progresso salvo no navegador (não precisa de login).
 - Questões de olimpíada adaptadas do **Concurso Canguru de Matemática Brasil** (níveis P e E, 2024/2025) e da **OBMEP Mirim**.
+- **📅 Plano de estudos** (aba "Plano"): sessões de estudo distribuídas até a **Prova 1 (02/10/2026)** e a **Prova 2 (23/11/2026)**, nos horários da Júlia (segunda 19:30 · terça 10:30–11:20 · sexta 10:00 · sábado anterior à prova 10:00, 1 h). Cada tópico tem um ✔ para marcar que foi estudado; sessão completa vale +3 ⭐. Para mudar datas, horários ou conteúdos, edite `plano.js`.
 
 ## Estrutura dos arquivos
 
@@ -30,6 +31,7 @@ index.html          página única
 style.css           visual
 viz.js              gráficos e figuras (SVG)
 gen.js              geradores do treino infinito
+plano.js            plano de estudos: datas das provas, horários e sessões
 app.js              navegação, correção, progresso
 dados-*.js          conteúdo: resumos e exercícios de cada grupo
 ```
@@ -45,7 +47,7 @@ Não há build nem dependências: é só abrir o `index.html` ou publicar a past
 1. Entre em <https://github.com> e clique no **+** (canto superior direito) → **New repository**.
 2. Nome do repositório: `matematica-julia` (pode ser outro). Deixe **Public**. Clique em **Create repository**.
 3. Na página do repositório novo, clique em **uploading an existing file**.
-4. Clique em **choose your files**, abra a pasta `ProfaClara`, selecione **todos os arquivos** (⌘A) e clique em **Abrir**. São 12 arquivos: `index.html`, `README.md`, `style.css`, `app.js`, `gen.js`, `viz.js` e os sete `dados-*.js`. (A pasta oculta `.claude` não aparece e não é necessária.)
+4. Clique em **choose your files**, abra a pasta `ProfaClara`, selecione **todos os arquivos** (⌘A) e clique em **Abrir**. São 13 arquivos: `index.html`, `README.md`, `style.css`, `app.js`, `gen.js`, `viz.js`, `plano.js` e os sete `dados-*.js`. (A pasta oculta `.claude` não aparece e não é necessária.)
 5. Embaixo, clique em **Commit changes**.
 6. Vá em **Settings** (aba do repositório) → menu lateral **Pages**.
 7. Em **Build and deployment → Source**, escolha **Deploy from a branch**. Em **Branch**, escolha `main` e a pasta `/ (root)`. Clique em **Save**.
@@ -58,7 +60,7 @@ Não há build nem dependências: é só abrir o `index.html` ou publicar a past
 ```bash
 cd /Users/guscortereal/Documents/ProfaClara
 git init
-git add index.html README.md style.css app.js gen.js viz.js dados-*.js .gitignore
+git add index.html README.md style.css app.js gen.js viz.js plano.js dados-*.js .gitignore
 git commit -m "Site Matemática com a Professora Clara"
 git branch -M main
 git remote add origin https://github.com/SEU-USUARIO/matematica-julia.git
